@@ -1,0 +1,51 @@
+
+
+-java provides java mail api to email operation
+-dependancy javax.mail 1.6.2
+
+//important class and interfaces
+java.util.Properties 
+  -The Properties class represents a persistent set of properties.
+javax.mail.Message
+  -This class models an email message. This is an abstract class. Subclasses(e.g MimeMessage) provide actual implementations.
+  -store message in Message implemented class i.e MimeMessage.
+  
+javax.mail.MessagingException
+  -base class that represents to all exception thrown by messaging class
+  
+javax.mail.PasswordAuthentication
+  -repository for username and password. those detail taken from this class while authentication.
+  
+javax.mail.Session
+  -represent a mail session
+  
+javax.mail.Transport
+
+
+  -used to send message
+  
+javax.mail.internet.InternetAddress
+  -represent email address using syntax RFC822
+  
+java.mail.internet.MimeMessage 
+  -represent MIME style email message.
+
+-steps
+ 1) Get the session
+ 2) Compose the message
+ 3) send the message
+ 
+ email id:- learncodewithavi@gmail.com
+ password: hiw07@Gm
+ 
+ //1. on the less secure app access of gmail by below path
+ Google Account >> Secutiry >> On the Less secure app access
+ 
+ //2. add javax mail api dependancy
+ 
+ 
+ //inline message
+ "<html><body><img src='cid:identifier1234'></body></html>"
+ 
+ //content id
+ "identifier1234"

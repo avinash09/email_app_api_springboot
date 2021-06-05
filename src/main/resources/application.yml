@@ -1,0 +1,27 @@
+server:
+ port: 8282
+ 
+debug: true
+
+spring:
+ mail:
+  host: smtp.gmail.com
+  port: 465
+  username: learncodewithavi@gmail.com
+  password: hiw07@Gm
+  properties:
+   mail:
+    debug: true
+    transport:
+     protocol: smtp
+    smtp:
+     ssl:
+      enable: true
+     auth: true
+    starttls:
+     enable: true
+    socketFactory:
+     port: 465
+     class: javax.net.ssl.SSLSocketFactory
+  
+ 
